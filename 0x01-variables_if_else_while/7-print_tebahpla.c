@@ -11,9 +11,9 @@ int main(void)
 	int i;
 	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
 
-	for (i = alp[26]; i >= alp[0]; i--)
+	for (i = 26; i >= 0; i--)
 	{
-		putchar(i);
+		putchar(alp[i]);
 	}
 	putchar('\n');
 	return (0);
