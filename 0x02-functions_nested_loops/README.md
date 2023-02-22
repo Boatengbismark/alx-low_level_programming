@@ -1,1 +1,1 @@
-Nested_for_loops_and_while_loops
+0x02. C - Functions, nested loops
