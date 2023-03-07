@@ -1,21 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 
 /**
- * *_memset - fills memory with constant byte
- * @s: poiter to the constant
+ * *_memset - fills a  block memory with a constant byte
+ * @s: pointer to put the constant
  * @b: constant
- * @n: number bytes to use
+ * @n: number of bytes to be changed
  * Return: s
  */
 
-char *_memset(char *s, char *b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
 
-	for (i = 0; i != n; i++)
+	for (i = 0; n > 0; i++)
 	{
 		s[i] = b;
+		n--;
 	}
 	return (s);
 }
