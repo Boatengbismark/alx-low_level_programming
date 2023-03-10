@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - entry point
+ * @argc: count command line commands
+ * @argv: array of strings
+ * Return: always 0
+ */
 
 int main(int argc, char *argv[])
 {
