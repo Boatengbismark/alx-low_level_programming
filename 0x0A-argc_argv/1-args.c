@@ -8,18 +8,19 @@
  * Return: always 0 to indicate success
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char  __attribute__((__unused__)) *argv[])
 {
 	int i;
 	int sum = 0;
 
 	for (i = 0; i < argc; i++)
 	{
-		if (argv[i] == " ")
+		/**if (argv[i] == " ")
 		{
 			sum += 0;
 		}
 		else
+		*/
 		sum++;
 	}
 	printf("%d\n", sum - 1);
