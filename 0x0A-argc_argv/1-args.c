@@ -15,11 +15,12 @@ int main(int argc, char  __attribute__((__unused__)) *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		/**if (argv[i] == " ")
-		{
-			sum += 0;
-		}
-		else
+		/**
+		 * if (argv[i] == " ")
+		*{
+		*	sum += 0;
+		*}
+		*else
 		*/
 		sum++;
 	}
