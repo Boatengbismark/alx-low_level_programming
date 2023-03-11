@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - entry point
+ * @argc: count the command line argurment
+ * @argv: array of string
+ * Return: always 0 to indicate success
+ */
 
 int main(int argc, char *argv[])
 {
@@ -9,6 +15,5 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n", argv[i]);
 	}
-	printf("\n");
 	return (0);
 }
