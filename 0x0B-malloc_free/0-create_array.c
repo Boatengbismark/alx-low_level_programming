@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * _strdup - Returns a pointer to a newly-allocated space in memory
  * @str: the string to be copy
