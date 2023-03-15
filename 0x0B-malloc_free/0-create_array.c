@@ -1,25 +1,25 @@
 #include <stdlib.h>
+
 /**
- * _strdup - Returns a pointer to a newly-allocated space in memory
- * @str: the string to be copy
- * Return: A the new allocated space
+ * create_array - create array and initialize with a character
+ * @size: the number of size to initialize with
+ * @c: character to initialize with the array
+ * Return: the initialize array
  */
 
-char *_strdup(char *str)
+char *create_array(unsigned int size, char c)
 {
-	char *new_str;
-	int length = 0, i = 0;
+	unsigned int i;
+	char *array;
 
-	if (str == NULL)
+	if (size == 0)
 		return (NULL);
-	while (str[length] != '\0')
-		length++;
-	new_str = malloc(sizeof(char) * length + 1);
-	for (i = 0; i < length; i++)
-	{
-		new_str[i] = str[i];
-		new_str[length] = '\0';
-	}
 
-	return (new_str);
-}
+	array = malloc(sizeof(char) * size);
+
+	for (i = 0; i < size; i++)
+	{
+		array[i] = c
+
+			return (array);
+	}
