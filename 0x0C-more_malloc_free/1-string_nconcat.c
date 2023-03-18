@@ -1,20 +1,42 @@
+#include "main.h"
 #include <stdlib.h>
 
 /**
-*malloc_checked - allocates memory using malloc
-*@b: number of bytes to allocate
-*Return: a pointer to the allocated memory
-*/
-
-void *malloc_checked(unsigned int b)
+ * string_nconcat - concatenates two strings
+ * @s1: string 1
+ * @s2: string 2
+ * @n:  number of bytes of s2 to concatenate to s1.
+ * Return: If the function fails - NULL.
+ *         Otherwise - a pointer to the concatenated space in memory.
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	void *p;
+	char *s;
+	unsigned int k = n, len;
 
-	p = malloc(b);
+	if (s1 == NULL)
+		s1 = "";
 
-	if (p == NULL)
+	if (s2 == NULL)
+		s2 = "";
 
-		exit(98);
+	for (len = 0; s1[len]; len++)
+		k++;
 
-	return (p);
+	s = malloc(sizeof(char) * (k + 1));
+
+	if (s == NULL)
+		return (NULL);
+
+	k = 0;
+
+	for (len = 0; s1[len]; len++)
+		s[k++] = s1[len];
+
+	for (len = 0; s2[len] && len < n; len++)
+		s[k++] = s2[len];
+
+	s[k] = '\0';
+
+	return (s);
 }
