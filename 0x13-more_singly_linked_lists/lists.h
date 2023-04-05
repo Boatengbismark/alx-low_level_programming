@@ -9,9 +9,9 @@
 #include <stdlib.h>
 
 /**
- * struct nodes - singly linked list
+ * struct listint_s - singly linked list
  * @n: integer variable
- * @link: point to the next node
+ * @next: point to the next node
  *
  * Description: singly linked list node structure
  */
