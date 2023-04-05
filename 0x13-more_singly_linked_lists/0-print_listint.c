@@ -10,7 +10,7 @@
 
 size_t print_listint(const listint_t *h)
 {
-	size_t links = NULL;
+	size_t links = 0;
 
 	while (h)
 	{
