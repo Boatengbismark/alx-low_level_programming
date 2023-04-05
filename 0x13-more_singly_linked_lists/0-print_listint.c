@@ -15,7 +15,7 @@ size_t print_listint(const listint_t *h)
 	while (h)
 	{
 		links++;
-		printf("%d\n", h->n);
+		printf("%d\n", h->link);
 		h = h->link;
 	}
 
